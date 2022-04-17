@@ -238,7 +238,7 @@ def onmessage(update,bot:ObigramClient):
         tl_admin_user = os.environ.get('tl_admin_user')
 
         #set in debug
-        tl_admin_user = 'rockstar984'
+        tl_admin_user = 'alex_00_04'
 
         jdb = JsonDatabase('database')
         jdb.check_create()
@@ -556,7 +556,7 @@ def onmessage(update,bot:ObigramClient):
 
         if '/start' in msgText:
             
-            msg = 'Bienvenido a mi rey espero que te guste mi bot de descarga y subidas 👨‍💻☁️ dueño y creador @rockstar984\n\n'
+            msg = 'Bienvenido estimado usuario, h adquirido un servicio de descarga gratuita, para alguna consulta @alex_00_04\n\n'
             msg+= 'Para saber como funciona esta versión solo use: /help\n'
             bot.editMessageText(message,msg)
         elif '/files' == msgText and user_info['cloudtype']=='moodle':
@@ -636,7 +636,7 @@ def main():
     bot_token = os.environ.get('bot_token')
 
     #set in debug
-    bot_token = '5334312919:AAGjk7mJzXfbBP0nklrb_48yZQFzh_KSsm4'
+    bot_token = '5379299365:AAGCqTmSMo7SOO3Dh87mjEUEF8AuYZjImTY'
 
     bot = ObigramClient(bot_token)
     bot.onMessage(onmessage)
